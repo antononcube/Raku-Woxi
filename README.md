@@ -23,10 +23,17 @@ zef install Woxi
 use Woxi;
 
 my $result = woxi-eval('Plus[1, 2]');
-say $result;             # 3
-$result.throw-on-error;
+say (:$result);
+say $result.stdout;
 
-my $script = woxi-run($*CWD.ads(<resources analysis.wls>));
+my $script = woxi-run($*CWD.add(<resources analysis.wls>));
+say $script.stdout;
+```
+```
+# result => Woxi::Result.new(stdout => "3\n", stderr => "", exitcode => 0, signal => 0, source => "Plus[1, 2]")
+# 3
+# 
+# 2*Sqrt[b]
 ```
 
 `woxi-eval`, `woxi-run`, and `woxi-version` return `Woxi::Result`, which
