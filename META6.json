@@ -1,12 +1,11 @@
 {
     "name": "Woxi",
-    "description": "A package interfacing Woxi (limited Rust implementation of Wolfram Language).",
+    "description": "A package interfacing Woxi (https://woxi.ad-si.com, limited Rust implementation of Wolfram Language).",
     "version": "0.0.1",
     "authors": [
         "Anton Antonov"
     ],
     "auth": "zef:antononcube",
-    "depends": [],
     "build-depends": [],
     "provides": {
         "Woxi": "lib/Woxi.rakumod"
