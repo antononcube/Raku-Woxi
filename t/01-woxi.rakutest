@@ -1,5 +1,5 @@
 use Test;
-use lib 'lib';
+#use lib 'lib';
 use Woxi;
 my $fixture = 't/fixtures/woxi'.IO.absolute.Str;
 my $answer = woxi-eval('1 + 2', :executable($fixture));
