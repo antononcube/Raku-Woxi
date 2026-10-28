@@ -1,0 +1,1 @@
+Integrate[1/Sqrt[x], {x, 0, b}]

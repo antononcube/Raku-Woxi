@@ -1,0 +1,12 @@
+#!/bin/sh
+case "$1" in
+  eval) case "$2" in
+    "1 + 2") printf '3\n' ;;
+    bad) printf 'parse error\n' >&2; exit 7 ;;
+    sleep) sleep 2; printf 'finished\n' ;;
+    *) printf 'evaluated: %s\n' "$2" ;;
+  esac ;;
+  run) printf 'ran: %s\n' "$2" ;;
+  --version) printf 'woxi 0.test\n' ;;
+  *) printf 'unknown command\n' >&2; exit 2 ;;
+esac
