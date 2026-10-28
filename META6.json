@@ -1,0 +1,22 @@
+{
+    "name": "Woxi",
+    "description": "A package interfacing Woxi (limited Rust implementation of Wolfram Language).",
+    "version": "0.0.1",
+    "authors": [
+        "Anton Antonov"
+    ],
+    "auth": "zef:antononcube",
+    "depends": [],
+    "build-depends": [],
+    "provides": {
+        "Woxi": "lib/Woxi.rakumod"
+    },
+    "license": "Artistic-2.0",
+    "tags": [
+        "woxi",
+        "wolfram-language",
+        "matheamtica"
+    ],
+    "api": "0",
+    "source-url": "https://github.com/antononcube/Raku-Woxi.git"
+}
